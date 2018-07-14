@@ -3,7 +3,7 @@ var currentIndex = 0
 var clock
 var audio = new Audio()
 audio.autoplay = true
-audio.crossOrigin = "anonymous"
+//audio.crossOrigin = "anonymous"
 
 getMusicList(function(list){
     musicList = list
