@@ -65,7 +65,6 @@ function $(selector) {
 function getMusicList(callback) {
     var xhr = new XMLHttpRequest()
     xhr.open('GET', './musiclist.json', true)
-    response.setHeader("Access-Control-Allow-Origin", "*")
     xhr.onload = function(){
       if((xhr.status >=200 && xhr.status < 300) || xhr.status === 304) {
         callback(JSON.parse(this.responseText))
